@@ -1,0 +1,23 @@
+[project]
+name = "product-query-agent"
+version = "0.1.0"
+description = "An LLM-powered product query agent built using LangChain and Groq to retrieve product information and reviews."
+readme = "README.md"
+authors = [
+    { name = "Om_Jangam", email = "om.savalaram.jangam@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain",
+    "langchain-groq",
+    "python-dotenv",
+    "notebook",
+    "ipykernel"
+]
+
+[project.scripts]
+product-query-agent = "product_query_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.24,<0.13.0"]
+build-backend = "uv_build"
